@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# do Single_Processor_ARM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:53 on Nov 02,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 22:16:53 on Nov 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/tb_ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:53 on Nov 02,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/tb_ALU.sv 
+# -- Compiling module tb_ALU
+# 
+# Top level modules:
+# 	tb_ALU
+# End time: 22:16:53 on Nov 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:53 on Nov 02,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 22:16:53 on Nov 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_ALU
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_ALU 
+# Start time: 22:16:53 on Nov 02,2026
+# Loading sv_std.std
+# Loading work.tb_ALU
+# Loading work.ALU
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# === BAT DAU KIEM TRA ALU ===
+# ADD: 5 + 3 = 8 | Flags (NZCV): 0000
+# SUB: 10 - 4 = 6 | Flags (NZCV): 0000
+# SUB (Zero test): 5 - 5 = 0 | Flags (NZCV): 0100
+# AND: 0000000f & 00000033 = 00000003 | Flags (NZCV): 0000
+# OR:  0000000f | 00000033 = 0000003f | Flags (NZCV): 0000
+# XOR: 0000ff00 ^ 00000ff0 = 0000f0f0 | Flags (NZCV): 0000
+# LSL: 4 << 2 = 16 | Flags (NZCV): 0000
+# LSR: 8 >> 1 = 4 | Flags (NZCV): 0000
+# === HOAN THANH KIEM TRA ALU ===
+# ** Note: $finish    : D:/file TKS_VXL/Single_processor_ARM/tb_ALU.sv(90)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_ALU
+# 1
+# Break in Module tb_ALU at D:/file TKS_VXL/Single_processor_ARM/tb_ALU.sv line 90
+# End time: 22:19:05 on Nov 02,2026, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 0
