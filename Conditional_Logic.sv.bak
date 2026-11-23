@@ -1,5 +1,0 @@
-module Conditional_Logic (
-	input logic 
-);
-
-endmodule
