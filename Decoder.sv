@@ -11,7 +11,8 @@ module Decoder (
 	output logic ALUSrc,
 	output logic [1:0] ImmSrc,
 	output logic [1:0] RegSrc,
-	output logic [1:0] ALUControl
+	output logic [1:0] ALUControl,
+	output logic NotWrite
 );
 
 	logic Branch;
@@ -37,7 +38,7 @@ module Decoder (
 		.ALUSrc(ALUSrc),
 		.ImmSrc(ImmSrc),
 		.RegSrc(RegSrc),
-		.ALUOp(ALUOp)
+		.ALUOp(ALUOp),
 	);
 	
 	/* ALU Decoder */
@@ -46,7 +47,8 @@ module Decoder (
 		.S(Funct[0]),
 		.ALUOp(ALUOp),
 		.ALUControl(ALUControl),
-		.FlagsW(FlagsW)
+		.FlagsW(FlagsW),
+		.NotWrite(NotWrite)
 	);
 
 endmodule

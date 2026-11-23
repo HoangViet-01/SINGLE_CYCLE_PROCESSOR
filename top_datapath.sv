@@ -6,26 +6,31 @@ module top_datapath #(
 ) (
 	input logic clk,
 	input logic rst,
+   input logic [WIDTH - 1:0] Instr,
 	input logic PCSrc,
 	input logic MemtoReg,
-	input logic MemWrite,
+//	input logic MemWrite,
 	input logic [3:0] ALUControl,
 	input logic ALUSrc,
 	input logic [1:0] ImmSrc,
 	input logic RegWrite,
 	input logic [1:0] RegSrc,
+	input logic [WIDTH - 1:0] ReadData,
 	
-	output logic [WIDTH - 1:0] Instr,
-	output logic [3:0] ALUFlags
+	output logic [WIDTH - 1:0] PC,
+	output logic [WIDTH - 1:0] WriteData,
+//	output logic [WIDTH - 1:0] Instr,
+	output logic [3:0] ALUFlags,
+	output logic [WIDTH - 1:0] ALUResult
 );
 
-	logic [WIDTH - 1:0] PC, PC_next, PCPlus4, PCPlus8;
+	logic [WIDTH - 1:0] /*PC,*/ PC_next, PCPlus4, PCPlus8;
 	logic [3:0] RA1, RA2;
 	logic [WIDTH - 1:0] RD1, RD2;
 	logic [WIDTH - 1:0] ExtImm;
 	logic [WIDTH - 1:0] input_SrcB;
-	logic [WIDTH - 1:0] SrcB, ALUResult;
-	logic [WIDTH - 1:0] ReadData;
+	logic [WIDTH - 1:0] SrcB;
+//	logic [WIDTH - 1:0] ReadData;
 	logic [WIDTH - 1:0] Result;
 	
 	/* --- PC --- */
@@ -64,15 +69,15 @@ module top_datapath #(
 		.data_out(PCPlus8)
 	);
 	
-	/* --- Instruction Memory --- */
-	Instr_Mem #(
-		.ADDR_WIDTH(ADDR_WIDTH),
-		.DATA_WIDTH(DATA_WIDTH),
-		.INSTR_SIZE(SIZE)
-	) instr_mem_uut (
-		.A(PC),
-		.RD(Instr)
-	);
+//	/* --- Instruction Memory --- */
+//	Instr_Mem #(
+//		.ADDR_WIDTH(ADDR_WIDTH),
+//		.DATA_WIDTH(DATA_WIDTH),
+//		.INSTR_SIZE(SIZE)
+//	) instr_mem_uut (
+//		.A(PC),
+//		.RD(Instr)
+//	);
 	
 	/* --- Register File --- */
 	// Tinh RA1.
@@ -146,19 +151,19 @@ module top_datapath #(
 		.ALUFlags(ALUFlags)
 	);
 	
-	/* --- Data Memory --- */
-	// Data_Mem.
-	Data_Mem #(
-		.ADDR_WIDTH(ADDR_WIDTH),
-		.DATA_WIDTH(DATA_WIDTH),
-		.MEM_SIZE(SIZE)
-	) data_mem_uut (
-		.clk(clk),
-		.WE(MemWrite),
-		.A(ALUResult),
-		.WD(RD2), // WriteData.
-		.RD(ReadData)
-	);
+//	/* --- Data Memory --- */
+//	// Data_Mem.
+//	Data_Mem #(
+//		.ADDR_WIDTH(ADDR_WIDTH),
+//		.DATA_WIDTH(DATA_WIDTH),
+//		.MEM_SIZE(SIZE)
+//	) data_mem_uut (
+//		.clk(clk),
+//		.WE(MemWrite),
+//		.A(ALUResult),
+//		.WD(RD2), // WriteData.
+//		.RD(ReadData)
+//	);
 	
 	// Mux Result.
 	MUX_21 #(
@@ -169,5 +174,7 @@ module top_datapath #(
 		.data_in2(ALUResult),
 		.data_out(Result)
 	);
+	
+	assign RD2 = WriteData;
 
 endmodule

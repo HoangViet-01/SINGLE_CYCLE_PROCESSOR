@@ -11,7 +11,7 @@ module Instr_Mem #(
 	
 	// Doc tap lenh tu file rv32i_book.hex roi dua vao mang mem.
 	initial begin
-		$readmemh("rv32i_book.hex", mem);
+		$readmemh("imem.dat", mem);
 	end
 	
 	// Tinh vi tri cau lenh trong mang mem(0,1,2,...) thong qua A(PC)(0x00,0x04,0x008,...).

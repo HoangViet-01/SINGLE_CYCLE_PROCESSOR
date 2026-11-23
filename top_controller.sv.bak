@@ -1,0 +1,46 @@
+module top_controller (
+	input logic [19:0] Instr,
+	input logic [3:0] Flags,
+	
+	output logic PCSrc,
+	output logic MemtoReg,
+	output logic MemWrite,
+	output logic [3:0] ALUControl,
+	output logic ALUSrc,
+	output logic [1:0] ImmSrc,
+	output logic RegWrite,
+	output logic [1:0] RegSrc
+);
+
+	logic PCS;
+	logic RegW;
+	logic MemW;
+	logic [1:0] FlagsW;
+	
+	/* Decoder */
+	Decoder decoder_uut (
+		.Op(Instr[15:14]), // bit 27:26.
+		.Funct(Instr[13:8]), // bit 25:20.
+		.Rd(Instr[3:0]),
+		.PCS(PCS),
+		.RegW(RegW),
+		.MemW(MemW),
+		.MemtoReg(MemtoReg),
+		.ALUSrc(ALUSrc),
+		.ImmSrc(ImmSrc),
+		.RegSrc(RegSrc),
+		.ALUControl(ALUControl),
+		.FlagsW(FlagsW)
+	);
+	
+	/* Consditional logic */
+	Conditional_Logic conditional_logic_uut (
+		.PCS(PCS),
+		.RegW(RegW),
+		.MemW(MemW),
+		.FlagsW(FlagsW),
+		.Cond(Instr[19:16]),
+		.ALUFlags(ALUFlags)
+	);
+
+endmodule

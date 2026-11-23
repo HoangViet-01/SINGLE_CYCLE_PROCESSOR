@@ -6,6 +6,7 @@ module Conditional_Logic (
 	input logic [1:0] FlagsW,
 	input logic [3:0] Cond,
 	input logic [3:0] ALUFlags,
+	input logic NotWrite,
 	
 	output logic PCSrc,
 	output logic RegWrite,
@@ -39,7 +40,7 @@ module Conditional_Logic (
 	// Cac dau ra dieu khien con lai.
 	always_comb begin
 		PCSrc = PCS & CondEx;
-		RegWrite = RegW & CondEx;
+		RegWrite = RegW & CondEx & (~NotWrite);
 		MemWrite = MemW & CondEx;
 	end
 	

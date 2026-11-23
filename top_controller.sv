@@ -20,6 +20,7 @@ module top_controller (
 	logic RegW;
 	logic MemW;
 	logic [1:0] FlagsW;
+	logic NotWrite;
 	
 	/* Decoder */
 	Decoder decoder_uut (
@@ -34,7 +35,8 @@ module top_controller (
 		.ImmSrc(ImmSrc),
 		.RegSrc(RegSrc),
 		.ALUControl(ALUControl),
-		.FlagsW(FlagsW)
+		.FlagsW(FlagsW),
+		.NotWrite(NotWrite)
 	);
 	
 	/* Consditional logic */
@@ -48,7 +50,8 @@ module top_controller (
 		.ALUFlags(Flags),
 		.PCSrc(PCSrc),
 		.RegWrite(RegWrite),
-		.MemWrite(MemWrite)
+		.MemWrite(MemWrite),
+		.NotWrite(NotWrite)
 	);
 
 endmodule

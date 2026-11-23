@@ -59,7 +59,6 @@ module ALU_Decoder (
 				5'b1101_0 : begin // MOV.
 					ALUControl = 4'b0100;
 					FlagsW = 2'b00;
-					NotWrite = 1'b1;
 				end
 				
 				default: begin

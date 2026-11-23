@@ -1,0 +1,6 @@
+E2801005  // 0x00: ADD R1, R0, #5
+E2802003  // 0x04: ADD R2, R0, #3
+E0413002  // 0x08: SUB R3, R1, R2
+E5803004  // 0x0C: STR R3, [R0, #4]
+E5904004  // 0x10: LDR R4, [R0, #4]
+EAFFFFF9  // 0x14: B 0x00 (nhay ve dia chi 0x00)
