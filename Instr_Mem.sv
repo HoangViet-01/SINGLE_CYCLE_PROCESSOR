@@ -9,9 +9,9 @@ module Instr_Mem #(
 
 	logic [DATA_WIDTH - 1:0] mem [0:INSTR_SIZE - 1]; // Mang INSTR_SIZE phan tu DATA_WIDTH bit luu NUM_INSTR cau lenh.
 	
-	// Doc tap lenh tu file rv32i_book.hex roi dua vao mang mem.
+	// Doc tap lenh tu file imem.dat roi dua vao mang mem.
 	initial begin
-		$readmemh("imem.dat", mem);
+		$readmemh("D:\\file TKS_VXL\\Single_processor_ARM\\imem.dat", mem);
 	end
 	
 	// Tinh vi tri cau lenh trong mang mem(0,1,2,...) thong qua A(PC)(0x00,0x04,0x008,...).

@@ -1,0 +1,27 @@
+module Shift # (
+	parameter int WIDTH = 32
+) (
+	input logic [WIDTH - 1:0] data_in,
+	input logic [6:0] control,
+	output logic [WIDTH - 1:0] data_out
+);
+
+	logic [4:0] shamt5; // Dich shamt5 bit.
+	logic [1:0] sh; // Chon kieu dich.
+	assign {shamt5, sh} = control;
+	
+	always_comb begin
+		data_out = '0;
+		case (sh)
+			
+			// 2'b00 : data_out = {data_in[31 - shamt5:0], {shamt5{0}}}; // LSL.
+			2'b00 : data_out = data_in << shamt5; // LSL.
+			//2'b01 : data_out = {{shamt5{0}}, data_in[31:shamt5]}; // LSR.
+			2'b00 : data_out = data_in >> shamt5; // LSR.
+			2'b10: data_out = $signed(data_in) >>> shamt5; // ASR: Dich phai so hoc.
+			2'b11: y = (data_int >> shamt5) | (data_in << (32 - shamt5)); // ROR : dich quay phai.
+			default : data_out = '0;
+		endcase
+	end
+
+endmodule

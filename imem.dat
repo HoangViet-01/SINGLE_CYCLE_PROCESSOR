@@ -1,6 +1,8 @@
-E2801005  // 0x00: ADD R1, R0, #5
-E2802003  // 0x04: ADD R2, R0, #3
-E0413002  // 0x08: SUB R3, R1, R2
-E5803004  // 0x0C: STR R3, [R0, #4]
-E5904004  // 0x10: LDR R4, [R0, #4]
-EAFFFFF9  // 0x14: B 0x00 (nhay ve dia chi 0x00)
+E3A00000  // 0x00: MOV R0, #0        (Op=00, I=1, cmd=1101 [MOV], S=0, Rd=R0, imm8=0)
+E3A01000  // 0x04: MOV R1, #0        (Op=00, I=1, cmd=1101 [MOV], S=0, Rd=R1, imm8=0)
+E2801005  // 0x08: ADD R1, R0, #5    (Op=00, I=1, cmd=0100 [ADD], S=0, Rn=R0, Rd=R1, imm8=5)
+E2802003  // 0x0C: ADD R2, R0, #3    (Op=00, I=1, cmd=0100 [ADD], S=0, Rn=R0, Rd=R2, imm8=3)
+E0413002  // 0x10: SUB R3, R1, R2    (Op=00, I=0, cmd=0010 [SUB], S=0, Rn=R1, Rd=R3, Rm=R2)
+E5803004  // 0x14: STR R3, [R0, #4]  (Op=01, STR, Rn=R0, Rd=R3, imm12=4 -> ghi R3 vào Mem[4])
+E5904004  // 0x18: LDR R4, [R0, #4]  (Op=01, LDR, Rn=R0, Rd=R4, imm12=4 -> đọc Mem[4] vào R4)
+EAFFFFF7  // 0x1C: B 0x00            (Op=101, imm24=-9 [0xFFFFF7] -> (PC+8) + (-36) = 0x00)

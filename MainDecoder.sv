@@ -18,14 +18,14 @@ module MainDecoder (
 	always_comb begin
 		casex ({Op, Funct5, Funct0})
 			// DP.
-			4'b000? : controls = 10'b0_0_0_0_xx_1_00_1; // DP Reg.
-			4'b001? : controls = 10'b0_0_0_1_00_1_x0_1; // DP Imm.
+			4'b000? : controls = 10'b0_0_0_0_00_1_00_1; // DP Reg.
+			4'b001? : controls = 10'b0_0_0_1_00_1_00_1; // DP Imm.
 			// Mem.
 			4'b01?0 : controls = 10'b0_x_1_1_01_0_10_0; // STR.
-			4'b01?1 : controls = 10'b0_1_0_1_01_1_x0_0; // LDR.
+			4'b01?1 : controls = 10'b0_1_0_1_01_1_00_0; // LDR.
 			// Branch.
-			4'b10?? : controls = 10'b1_0_0_1_10_0_x1_0; // B.
-			default : controls = 10'bx;
+			4'b10?? : controls = 10'b1_0_0_1_10_0_01_0; // B.
+			default : controls = 10'b0;
 		endcase
 	end
 	

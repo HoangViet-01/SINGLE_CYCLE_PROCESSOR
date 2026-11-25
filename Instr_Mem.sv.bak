@@ -1,0 +1,21 @@
+module Instr_Mem #(
+	parameter int ADDR_WIDTH = 32,
+	parameter int DATA_WIDTH = 32,
+	parameter int NUM_INSTR = 512 // So luong cau lenh.
+) (
+	input logic [ADDR_WIDTH - 1:0] A,
+	output logic [DATA_WIDTH - 1:0] RD
+);
+
+	logic [DATA_WIDTH - 1:0] mem [NUM_INSTR - 1:0]; // Mang NUM_INSTR phan tu DATA_WIDTH bit luu NUM_INSTR cau lenh.
+	
+	// Doc tap lenh tu file rv32i_book.hex.
+	initial begin
+		$readmemh("rv32i_book.hex", mem);
+	end
+	
+	// Tinh vi tri cau lenh trong mang mem(0,1,2,...) thong qua A(PC)(0x00,0x04,0x008,...).
+	// Dich phai 2 bit (lay A/4) de ra vi tri trong mem.
+	assign RD = mem[A[10:2]]; // NUM_INSTR = 512 = 2^9.
+
+endmodule

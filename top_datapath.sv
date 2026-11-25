@@ -110,7 +110,7 @@ module top_datapath #(
 		.WD3(Result),
 		.R15(PCPlus8),
 		.RD1(RD1), // SrcA.
-		.RD2(RD2)
+		.RD2(WriteData)
 	);
 	
 	/* --- Extend --- */
@@ -124,7 +124,7 @@ module top_datapath #(
 	Shift #(
 		.WIDTH(WIDTH)
 	) shift_uut (
-		.data_in(RD2),
+		.data_in(WriteData),
 		.control(Instr[11:5]),
 		.data_out(input_SrcB)
 	);
@@ -174,7 +174,5 @@ module top_datapath #(
 		.data_in2(ALUResult),
 		.data_out(Result)
 	);
-	
-	assign RD2 = WriteData;
 
 endmodule

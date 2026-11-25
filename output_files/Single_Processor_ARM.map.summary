@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Nov 23 16:36:29 2026
+Analysis & Synthesis Status : Successful - Wed Nov 25 15:36:43 2026
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Single_Processor_ARM
 Top-level Entity Name : top
 Family : MAX 10
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 2
+Total logic elements : 28,751
+    Total combinational functions : 12,143
+    Dedicated logic registers : 16,705
+Total registers : 16705
+Total pins : 67
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
