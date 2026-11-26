@@ -1,7 +1,7 @@
 module Instr_Mem #(
 	parameter int ADDR_WIDTH = 32,
 	parameter int DATA_WIDTH = 32,
-	parameter int INSTR_SIZE = 512 // So luong cau lenh.
+	parameter int INSTR_SIZE = 64 // So luong cau lenh.
 ) (
 	input logic [ADDR_WIDTH - 1:0] A,
 	output logic [DATA_WIDTH - 1:0] RD
@@ -16,6 +16,6 @@ module Instr_Mem #(
 	
 	// Tinh vi tri cau lenh trong mang mem(0,1,2,...) thong qua A(PC)(0x00,0x04,0x008,...).
 	// Dich phai A 2 bit (lay A/4) de ra vi tri trong mem.
-	assign RD = mem[A[31:2]];
+	assign RD = mem[A[7:2]];
 
 endmodule

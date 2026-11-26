@@ -61,6 +61,18 @@ module ALU_Decoder (
 					FlagsW = 2'b00;
 				end
 				
+				5'b1000_1 : begin // Lenh TST : thuc hien data_in1 AND data_in2 (hoac hang so)
+					ALUControl = 4'b0010;
+					FlagsW = 2'b10;
+					NotWrite = 1'b1;
+				end
+				
+				5'b1001_1 : begin // Lenh TEQ : thuc hien data_in1 XOR data_in2 (hoac hang so)
+					ALUControl = 4'b0101;
+					FlagsW = 2'b10;
+					NotWrite = 1'b1;
+				end
+				
 				default: begin
 					ALUControl = 4'b0000;
 					FlagsW = 2'b00;

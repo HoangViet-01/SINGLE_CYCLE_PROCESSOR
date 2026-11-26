@@ -41,7 +41,7 @@ module top #(
 	Instr_Mem #(
 		.ADDR_WIDTH(ADDR_WIDTH),
 		.DATA_WIDTH(DATA_WIDTH),
-		.INSTR_SIZE(SIZE)
+		.INSTR_SIZE(64)
 	) instr_mem_uut (
 		.A(PC),
 		.RD(Instr)

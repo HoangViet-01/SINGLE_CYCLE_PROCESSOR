@@ -34,8 +34,8 @@ module ALU #(
 			4'b0010 : data_out = data_in1 & data_in2; // AND.
 			4'b0011 : data_out = data_in1 | data_in2; // OR.
 			4'b0100 : data_out = data_in2; // Truyen thang data_in2 - lenh MOV.
+			4'b0101 : data_out = data_in1 ^ data_in2; // XOR.
 			
-//			4'b0101 : data_out = data_in1 ^ data_in2; // XOR.
 //			4'b0111 : data_out = data_in1; // Truyen thang data_in1.
 //			4'b0110 : data_out = ~data_in1; // NOT.
 //			4'b1000 : data_out = data_in1 << data_in2[4:0]; // LSL, 2^5 = 32bit.

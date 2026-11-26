@@ -6,7 +6,7 @@ module Extend_32bit (
 
 	always_comb begin
 		ExtImm = '0;
-		case (ImmSrc) 
+		casex (ImmSrc) 
 			// 8-bit : Cac lenh lien qua den DP.
 			2'b00 : ExtImm = {24'b0, Instr[7:0]};
 			
@@ -16,6 +16,8 @@ module Extend_32bit (
 			// 24-bit : Cac lenh lien quan den Branch.
 			// offset = Instr x 4 (dich trai 2 bit) <-> LDR R2, [R0, R1, LSL #2] -> Doi tu offset logic sang offset thuc te.
 			2'b10 : ExtImm = {{6{Instr[23]}}, Instr[23:0], 2'b00}; // Mo rong co dau va dich trai 2 bit.
+			
+			default : ExtImm = 32'bx;
 		endcase
 	end
 

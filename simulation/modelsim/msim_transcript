@@ -12,209 +12,209 @@
 # 
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:16 on Nov 25,2026
+# Start time: 22:23:27 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 15:37:17 on Nov 25,2026, Elapsed time: 0:00:01
+# End time: 22:23:28 on Nov 26,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/PC_reg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:17 on Nov 25,2026
+# Start time: 22:23:28 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/PC_reg.sv 
 # -- Compiling module PC_reg
 # 
 # Top level modules:
 # 	PC_reg
-# End time: 15:37:17 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:28 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/MUX_21.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:17 on Nov 25,2026
+# Start time: 22:23:28 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/MUX_21.sv 
 # -- Compiling module MUX_21
 # 
 # Top level modules:
 # 	MUX_21
-# End time: 15:37:17 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:28 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/ADD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:18 on Nov 25,2026
+# Start time: 22:23:28 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/ADD.sv 
 # -- Compiling module ADD
 # 
 # Top level modules:
 # 	ADD
-# End time: 15:37:18 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:28 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:18 on Nov 25,2026
+# Start time: 22:23:28 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 15:37:18 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:28 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Extend_32bit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:18 on Nov 25,2026
+# Start time: 22:23:28 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Extend_32bit.sv 
 # -- Compiling module Extend_32bit
 # 
 # Top level modules:
 # 	Extend_32bit
-# End time: 15:37:18 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:29 on Nov 26,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Data_Mem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:19 on Nov 25,2026
+# Start time: 22:23:29 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Data_Mem.sv 
 # -- Compiling module Data_Mem
 # 
 # Top level modules:
 # 	Data_Mem
-# End time: 15:37:19 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:29 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/top_datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:19 on Nov 25,2026
+# Start time: 22:23:29 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/top_datapath.sv 
 # -- Compiling module top_datapath
 # 
 # Top level modules:
 # 	top_datapath
-# End time: 15:37:19 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:29 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/MainDecoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:20 on Nov 25,2026
+# Start time: 22:23:29 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/MainDecoder.sv 
 # -- Compiling module MainDecoder
 # 
 # Top level modules:
 # 	MainDecoder
-# End time: 15:37:20 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:29 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/ALU_Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:20 on Nov 25,2026
+# Start time: 22:23:29 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/ALU_Decoder.sv 
 # -- Compiling module ALU_Decoder
 # 
 # Top level modules:
 # 	ALU_Decoder
-# End time: 15:37:20 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:29 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/PC_Logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:20 on Nov 25,2026
+# Start time: 22:23:30 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/PC_Logic.sv 
 # -- Compiling module PC_Logic
 # 
 # Top level modules:
 # 	PC_Logic
-# End time: 15:37:21 on Nov 25,2026, Elapsed time: 0:00:01
+# End time: 22:23:30 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:21 on Nov 25,2026
+# Start time: 22:23:30 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Decoder.sv 
 # -- Compiling module Decoder
 # 
 # Top level modules:
 # 	Decoder
-# End time: 15:37:21 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:30 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Condition_Check.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:21 on Nov 25,2026
+# Start time: 22:23:30 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 15:37:21 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:30 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Conditional_Logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:22 on Nov 25,2026
+# Start time: 22:23:30 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Conditional_Logic.sv 
 # -- Compiling module Conditional_Logic
 # 
 # Top level modules:
 # 	Conditional_Logic
-# End time: 15:37:22 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:30 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/top_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:22 on Nov 25,2026
+# Start time: 22:23:30 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/top_controller.sv 
 # -- Compiling module top_controller
 # 
 # Top level modules:
 # 	top_controller
-# End time: 15:37:22 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:30 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:22 on Nov 25,2026
+# Start time: 22:23:31 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 15:37:23 on Nov 25,2026, Elapsed time: 0:00:01
+# End time: 22:23:31 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Shift.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:23 on Nov 25,2026
+# Start time: 22:23:31 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Shift.sv 
 # -- Compiling module Shift
 # 
 # Top level modules:
 # 	Shift
-# End time: 15:37:23 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:31 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:23 on Nov 25,2026
+# Start time: 22:23:31 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/cpu.sv 
 # -- Compiling module cpu
 # 
 # Top level modules:
 # 	cpu
-# End time: 15:37:23 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:31 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/Instr_Mem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:24 on Nov 25,2026
+# Start time: 22:23:31 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/Instr_Mem.sv 
 # -- Compiling module Instr_Mem
 # 
 # Top level modules:
 # 	Instr_Mem
-# End time: 15:37:24 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:31 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/file\ TKS_VXL/Single_processor_ARM {D:/file TKS_VXL/Single_processor_ARM/tb_top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:37:24 on Nov 25,2026
+# Start time: 22:23:32 on Nov 26,2026
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/file TKS_VXL/Single_processor_ARM" D:/file TKS_VXL/Single_processor_ARM/tb_top.sv 
 # -- Compiling module tb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 15:37:24 on Nov 25,2026, Elapsed time: 0:00:00
+# End time: 22:23:32 on Nov 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_top
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_top 
-# Start time: 15:37:25 on Nov 25,2026
+# Start time: 22:23:32 on Nov 26,2026
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.top
@@ -243,119 +243,33 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# [Time 70000 ns] Ghi RAM: Dia chi = 4 | Du lieu = 2
-# === THANH CONG: CPU da thuc thi dung toan bo tap lenh! ===
-# ** Note: $finish    : D:/file TKS_VXL/Single_processor_ARM/tb_top.sv(113)
-#    Time: 120 ns  Iteration: 0  Instance: /tb_top
+# [t=30000 ns] PC=0x00000004 Instr=0xe3a01005 PCSrc=0 Z=0 R3=x R4=x R6=x R11=x
+# [t=40000 ns] PC=0x00000008 Instr=0xe3a02003 PCSrc=0 Z=0 R3=x R4=x R6=x R11=x
+# [t=50000 ns] PC=0x0000000c Instr=0xe0813002 PCSrc=0 Z=0 R3=x R4=x R6=x R11=x
+# [t=60000 ns] PC=0x00000010 Instr=0xe0914002 PCSrc=0 Z=0 R3=8 R4=x R6=x R11=x
+# [t=70000 ns] PC=0x00000014 Instr=0xe0415002 PCSrc=0 Z=0 R3=8 R4=8 R6=x R11=x
+# [t=80000 ns] PC=0x00000018 Instr=0xe0516001 PCSrc=0 Z=1 R3=8 R4=8 R6=x R11=x
+# [t=90000 ns] PC=0x0000001c Instr=0xe0017002 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=100000 ns] PC=0x00000020 Instr=0xe0118002 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=110000 ns] PC=0x00000024 Instr=0xe1819002 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=120000 ns] PC=0x00000028 Instr=0xe191a002 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=130000 ns] PC=0x0000002c Instr=0xe1110002 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=140000 ns] PC=0x00000030 Instr=0xe1310001 PCSrc=0 Z=1 R3=8 R4=8 R6=0 R11=x
+# [t=150000 ns] PC=0x00000034 Instr=0xe1510002 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=160000 ns] PC=0x00000038 Instr=0x0a000001 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=170000 ns] PC=0x0000003c Instr=0x1a000000 PCSrc=1 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=180000 ns] PC=0x00000044 Instr=0xe1510001 PCSrc=0 Z=1 R3=8 R4=8 R6=0 R11=x
+# [t=190000 ns] PC=0x00000048 Instr=0x1a000001 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=200000 ns] PC=0x0000004c Instr=0x0a000000 PCSrc=1 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=210000 ns] PC=0x00000054 Instr=0xe5803004 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+#   -> Ghi RAM: Dia chi = 0x00000004 (4) | Du lieu = 8
+# [t=220000 ns] PC=0x00000058 Instr=0xe590b004 PCSrc=0 Z=0 R3=8 R4=8 R6=0 R11=x
+# [t=230000 ns] PC=0x0000005c Instr=0xeaffffe7 PCSrc=1 Z=1 R3=8 R4=8 R6=0 R11=8
+# [t=240000 ns] PC=0x00000000 Instr=0xe3a00000 PCSrc=0 Z=1 R3=8 R4=8 R6=0 R11=8
+# === THANH CONG: CPU da chay het chuong trinh va nhay ve 0x00000000! ===
+# ** Note: $finish    : D:/file TKS_VXL/Single_processor_ARM/tb_top.sv(120)
+#    Time: 260 ns  Iteration: 0  Instance: /tb_top
 # 1
-# Break in Module tb_top at D:/file TKS_VXL/Single_processor_ARM/tb_top.sv line 113
-add wave -position insertpoint  \
-sim:/tb_top/Flags
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/reset \
-sim:/tb_top/WriteData \
-sim:/tb_top/DataAdr \
-sim:/tb_top/MemWrite \
-sim:/tb_top/PC \
-sim:/tb_top/Instr \
-sim:/tb_top/ReadData \
-sim:/tb_top/ALUFlags \
-sim:/tb_top/Flags \
-sim:/tb_top/ALUControl \
-sim:/tb_top/ImmSrc \
-sim:/tb_top/RegSrc \
-sim:/tb_top/RegWrite \
-sim:/tb_top/ALUSrc \
-sim:/tb_top/MemtoReg \
-sim:/tb_top/PCSrc \
-sim:/tb_top/NotWrite \
-sim:/tb_top/SrcA \
-sim:/tb_top/SrcB \
-sim:/tb_top/Result \
-sim:/tb_top/R0 \
-sim:/tb_top/R1 \
-sim:/tb_top/R2 \
-sim:/tb_top/R3 \
-sim:/tb_top/R4 \
-sim:/tb_top/R5 \
-sim:/tb_top/R6 \
-sim:/tb_top/R7 \
-sim:/tb_top/R8 \
-sim:/tb_top/seen_ldr \
-sim:/tb_top/seen_branch
-add wave -position insertpoint  \
-sim:/tb_top/ALUFlags
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/reset \
-sim:/tb_top/WriteData \
-sim:/tb_top/DataAdr \
-sim:/tb_top/MemWrite \
-sim:/tb_top/PC \
-sim:/tb_top/Instr \
-sim:/tb_top/ReadData \
-sim:/tb_top/ALUFlags \
-sim:/tb_top/Flags \
-sim:/tb_top/ALUControl \
-sim:/tb_top/ImmSrc \
-sim:/tb_top/RegSrc \
-sim:/tb_top/RegWrite \
-sim:/tb_top/ALUSrc \
-sim:/tb_top/MemtoReg \
-sim:/tb_top/PCSrc \
-sim:/tb_top/NotWrite \
-sim:/tb_top/SrcA \
-sim:/tb_top/SrcB \
-sim:/tb_top/Result \
-sim:/tb_top/R0 \
-sim:/tb_top/R1 \
-sim:/tb_top/R2 \
-sim:/tb_top/R3 \
-sim:/tb_top/R4 \
-sim:/tb_top/R5 \
-sim:/tb_top/R6 \
-sim:/tb_top/R7 \
-sim:/tb_top/R8 \
-sim:/tb_top/seen_ldr \
-sim:/tb_top/seen_branch
-add wave -position insertpoint  \
-sim:/tb_top/DataAdr
-# Paste insertion failed: assign: ** UI-Msg: (vish-4014) No objects found matching 'assign'.
-# Paste insertion failed: =: ** UI-Msg: (vish-4014) No objects found matching '='.
-# Paste insertion failed: dut.ALUFlags;: (vish-4014) No objects found matching 'dut.ALUFlags;'.
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/reset \
-sim:/tb_top/WriteData \
-sim:/tb_top/DataAdr \
-sim:/tb_top/MemWrite \
-sim:/tb_top/PC \
-sim:/tb_top/Instr \
-sim:/tb_top/ReadData \
-sim:/tb_top/ALUFlags \
-sim:/tb_top/Flags \
-sim:/tb_top/ALUControl \
-sim:/tb_top/ImmSrc \
-sim:/tb_top/RegSrc \
-sim:/tb_top/RegWrite \
-sim:/tb_top/ALUSrc \
-sim:/tb_top/MemtoReg \
-sim:/tb_top/PCSrc \
-sim:/tb_top/NotWrite \
-sim:/tb_top/SrcA \
-sim:/tb_top/SrcB \
-sim:/tb_top/Result \
-sim:/tb_top/R0 \
-sim:/tb_top/R1 \
-sim:/tb_top/R2 \
-sim:/tb_top/R3 \
-sim:/tb_top/R4 \
-sim:/tb_top/R5 \
-sim:/tb_top/R6 \
-sim:/tb_top/R7 \
-sim:/tb_top/R8 \
-sim:/tb_top/seen_ldr \
-sim:/tb_top/seen_branch
-# End time: 22:10:05 on Nov 25,2026, Elapsed time: 6:32:40
+# Break in Module tb_top at D:/file TKS_VXL/Single_processor_ARM/tb_top.sv line 120
+# End time: 22:43:21 on Nov 26,2026, Elapsed time: 0:19:49
 # Errors: 0, Warnings: 0

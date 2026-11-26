@@ -18,7 +18,7 @@ module Shift # (
 			//2'b01 : data_out = {{shamt5{0}}, data_in[31:shamt5]}; // LSR.
 			2'b01 : data_out = data_in >> shamt5; // LSR.
 			2'b10: data_out = $signed(data_in) >>> shamt5; // ASR: Dich phai so hoc.
-			2'b11: data_out = (data_in >> shamt5) | (data_in << (WIDTH - shamt5)); // ROR : dich quay phai.
+			2'b11: data_out = (shamt5 == '0) ? data_in : (data_in >> shamt5) | (data_in << (WIDTH - shamt5)); // ROR : dich quay phai.
 			default : data_out = '0;
 		endcase
 	end
