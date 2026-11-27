@@ -10,6 +10,7 @@ module top #(
 	output [WIDTH - 1:0] WriteData,
 	output [WIDTH - 1:0] DataAdr,
 	output logic MemWrite
+//	output logic [3:0] ALUFlags
 );
 	logic [WIDTH - 1:0] PC;
 	logic [WIDTH - 1:0] Instr;
@@ -33,8 +34,8 @@ module top #(
 		.PC(PC),
 		.MemWrite(MemWrite),
 		.ALUResult(DataAdr),
-		.WriteData(WriteData),
-		.ALUFlags(ALUFlags)
+		.WriteData(WriteData)
+//		.ALUFlags(ALUFlags)
 	);
 
 	// Instruction Memory.

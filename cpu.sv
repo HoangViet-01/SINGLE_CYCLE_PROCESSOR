@@ -12,8 +12,8 @@ module cpu #(
 	output logic [WIDTH - 1:0] PC,
 	output logic MemWrite,
 	output logic [WIDTH - 1:0] ALUResult,
-	output logic [WIDTH - 1:0] WriteData,
-	output logic [3:0] ALUFlags
+	output logic [WIDTH - 1:0] WriteData
+//	output logic [3:0] ALUFlags
 );
 
 	logic PCSrc;
@@ -23,6 +23,7 @@ module cpu #(
 	logic [1:0] ImmSrc;
 	logic RegWrite;
 	logic [1:0] RegSrc;
+	logic [3:0] ALUFlags;
 
 	// Datapath.
 	top_datapath #(

@@ -10,8 +10,8 @@ module tb_top;
     logic MemWrite;
 
     // Điều chỉnh 2 địa chỉ này cho khớp với file imem bạn đang nạp
-    localparam logic [31:0] ADDR_LDR    = 32'h00000058; // Địa chỉ lệnh LDR trong bản imem đầy đủ
-    localparam logic [31:0] ADDR_BRANCH = 32'h0000005C; // Địa chỉ lệnh B 0x00 trong bản imem đầy đủ
+    localparam logic [31:0] ADDR_LDR    = 32'h00000050; // Địa chỉ lệnh LDR trong bản imem đầy đủ
+    localparam logic [31:0] ADDR_BRANCH = 32'h00000054; // Địa chỉ lệnh B 0x00 trong bản imem đầy đủ
     localparam logic [31:0] EXP_MEM_VAL = 32'd8;        // Giá trị kỳ vọng ghi vào Mem[4]
 
     top dut (
@@ -24,26 +24,27 @@ module tb_top;
 
     // 2. Tín hiệu nội bộ để theo dõi trên Waveform
     logic [31:0] PC, Instr, ReadData;
-    assign PC       = dut.PC;
-    assign Instr    = dut.Instr;
+    assign PC = dut.PC;
+    assign Instr = dut.Instr;
     assign ReadData = dut.ReadData;
 
     logic [3:0]  ALUFlags, ALUControl;
     logic [1:0]  ImmSrc, RegSrc;
     logic        RegWrite, ALUSrc, MemtoReg, PCSrc, NotWrite;
-    assign ALUFlags   = dut.ALUFlags;
+    
     assign ALUControl = dut.cpu_uut.controller_uut.ALUControl;
-    assign ImmSrc     = dut.cpu_uut.controller_uut.ImmSrc;
-    assign RegSrc     = dut.cpu_uut.controller_uut.RegSrc;
-    assign RegWrite   = dut.cpu_uut.controller_uut.RegWrite;
-    assign ALUSrc     = dut.cpu_uut.controller_uut.ALUSrc;
-    assign MemtoReg   = dut.cpu_uut.controller_uut.MemtoReg;
-    assign PCSrc      = dut.cpu_uut.controller_uut.PCSrc;
-    assign NotWrite   = dut.cpu_uut.controller_uut.NotWrite;
+    assign ImmSrc = dut.cpu_uut.controller_uut.ImmSrc;
+    assign RegSrc = dut.cpu_uut.controller_uut.RegSrc;
+    assign RegWrite = dut.cpu_uut.controller_uut.RegWrite;
+    assign ALUSrc = dut.cpu_uut.controller_uut.ALUSrc;
+    assign MemtoReg = dut.cpu_uut.controller_uut.MemtoReg;
+    assign PCSrc = dut.cpu_uut.controller_uut.PCSrc;
+    assign NotWrite = dut.cpu_uut.controller_uut.NotWrite;
 
     logic [31:0] SrcA, SrcB, Result;
-    assign SrcA   = dut.cpu_uut.datapath_uut.alu_uut.data_in1;
-    assign SrcB   = dut.cpu_uut.datapath_uut.SrcB;
+    assign SrcA = dut.cpu_uut.datapath_uut.alu_uut.data_in1;
+    assign SrcB = dut.cpu_uut.datapath_uut.SrcB;
+	 assign ALUFlags = dut.cpu_uut.datapath_uut.ALUFlags;
     assign Result = dut.cpu_uut.datapath_uut.Result;
 
     // Quan sát R0 -> R12
